@@ -14,11 +14,11 @@ services:
           PGID: 1000
         volumes:
         - ./Plex Library:/config/Library/Application Support/Plex Media Server
-        - ${PELICULAS}:/media/peliculas
+        #- ${PELICULAS}:/media/peliculas
         - ${ANIME}:/media/anime
         - ${ANIMEPELICULA}:/media/anime_pelicula
-        - ${DC}:/media/dc
-        - ${SERIES}:/media/series
+        #- ${DC}:/media/dc
+        #- ${SERIES}:/media/series
         - ${ANIMEEXTENDS}:/media/anime_extends
         restart: always
         networks: 
