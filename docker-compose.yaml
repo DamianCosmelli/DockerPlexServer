@@ -21,13 +21,3 @@ services:
         #- ${SERIES}:/media/series
         - ${ANIMEEXTENDS}:/media/anime_extends
         restart: always
-        networks: 
-            lan:
-                ipv4_address: 192.168.0.13
-networks:
-  lan:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: "192.168.0.0/24"       
-          gateway: "192.168.0.1"
