@@ -12,12 +12,13 @@ services:
           TZ: 'America/Argentina/Buenos_Aires'
           PUID: 1000
           PGID: 1000
+          PLEX_CLAIM: claim-Rkf8hsf8H8GwesLRcERB  #reclamar en https://www.plex.tv/claim/ (tiene una vida util de 4 min)
         volumes:
         - ./Plex Library:/config/Library/Application Support/Plex Media Server
-        #- ${PELICULAS}:/media/peliculas
+        - ${PELICULAS}:/media/peliculas
         - ${ANIME}:/media/anime
         - ${ANIMEPELICULA}:/media/anime_pelicula
         #- ${DC}:/media/dc
-        #- ${SERIES}:/media/series
+        - ${SERIES}:/media/series
         - ${ANIMEEXTENDS}:/media/anime_extends
         restart: always
